@@ -4,12 +4,62 @@ body {
   color: #434455;
 }
 
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 li {
   list-style-type: none;
 }
 
 a {
   text-decoration: none;
+}
+
+.header-container {
+  background-color: #fff;
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.container {
+  width: 1158px;
+  margin: 0 156px;
+}
+
+.header-inner {
+  display: flex;
+  margin: 24px 0;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+header ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
+  gap: 40px;
+}
+
+.nav-ul-list {
+  margin-left: 76px;
+}
+
+.adress-ul-list {
+  margin-left: 332px;
+}
+
+section {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .header-logo,
@@ -64,6 +114,7 @@ a {
   font-weight: 700;
   letter-spacing: 0.02em;
   text-align: center;
+  width: 496px;
 }
 
 .hero-btn {
@@ -90,6 +141,12 @@ a {
   text-align: center;
 }
 
+.feature ul {
+  display: flex;
+  gap: 24px;
+  margin-top: 72px;
+}
+
 .feature-list-title {
   font-weight: 500;
   font-size: 20px;
@@ -109,6 +166,24 @@ a {
   background-color: #f4f4fd;
 }
 
+.team ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 32px;
+  margin-top: 72px;
+}
+
+.team li {
+  border-radius: 0 0 4px 4px;
+  padding: 0px 0px 32px 0px;
+  width: 264px;
+  height: 380px;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+
 .team-title {
   font-size: 36px;
   line-height: 1.11;
@@ -120,6 +195,15 @@ a {
 
 .team-list-item {
   background-color: #ffffff;
+}
+
+.card-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
+  margin: 32px 16px;
 }
 
 .team-li-title {
@@ -144,6 +228,28 @@ a {
   text-align: center;
   text-transform: capitalize;
   color: #2e2f42;
+  margin-bottom: 72px;
+}
+
+.portfolio-ul-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: space-between;
+}
+
+.portfolio-card-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
+  border-bottom: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
+  padding: 32px 16px;
+  width: 360px;
+  height: 120px;
 }
 
 .portfolio-li-title {
@@ -173,4 +279,6 @@ a {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+  margin-top: 16px;
+  width: 274px;
 }
