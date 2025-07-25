@@ -7,10 +7,15 @@ body {
 h1,
 h2,
 h3,
-p,
-ul {
+p {
   margin: 0;
   padding: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
 }
 
 li {
@@ -25,6 +30,20 @@ img {
   display: block;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .header-container {
   background-color: #fff;
   border-bottom: 1px solid #e7e9fc;
@@ -32,12 +51,12 @@ img {
 
 .container {
   width: 1158px;
-  margin: 0 156px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 .header-inner {
   display: flex;
-  margin: 24px 0;
 }
 
 .header-nav {
@@ -45,20 +64,19 @@ img {
   align-items: center;
 }
 
-header ul {
+.header-nav-ul {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: row;
   gap: 40px;
-}
-
-.nav-ul-list {
-  margin-left: 76px;
+  margin-right: 332px;
 }
 
 .adress-ul-list {
-  margin-left: 332px;
+  display: flex;
+  gap: 40px;
+  padding: 24px 0;
 }
 
 section {
@@ -77,8 +95,16 @@ section {
   text-transform: uppercase;
 }
 
+.nav-margin-logo {
+  margin-right: 76px;
+}
+
 .logo-part {
   color: #2e2f42;
+}
+
+.header-ul-list {
+  padding: 24px 0;
 }
 
 .nav-list-item {
@@ -143,19 +169,12 @@ section {
 }
 
 .feature-title {
-  color: #2e2f42;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  text-align: center;
   visibility: hidden;
 }
 
 .feature-ul {
   display: flex;
   gap: 24px;
-  margin-top: 72px;
 }
 
 .feature-list {
